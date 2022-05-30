@@ -2,12 +2,6 @@
 
 ### Techstack
 
-1. Application, Automation,runtime environment &nbsp;&nbsp;&nbsp;&nbsp; hi
-2. Database &nbsp;&nbsp;&nbsp;&nbsp; hi
-3. Version Control System
-4.  CI/CD System
-5.  Monitoring
-
 * Application, Automation,runtime environment
     * aws (+terraform+kubernetes+load-balancer)
 
