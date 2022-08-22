@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  redis:
+    image: redis
+    container_name: cache
+    expose:
+      - 6379
+    # command: ["redis-server", "--bind", "redis", "--port", "6379"]
+  frontend:
+    container_name: frontend
+    build:  ./my-counter
+    ports:
+      - "3000:3000"
+  backend:
+    build: ./backend
+    links:
+      - redis
+    ports:
+      - 8080:8080
+    environment:
+    - REDIS_URL=redis://cache
+    - PORT=8080
