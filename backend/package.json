@@ -9,6 +9,7 @@
     "redis": "^4.2.0"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node app.js"
   }
 }
